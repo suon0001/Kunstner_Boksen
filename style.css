@@ -10,8 +10,8 @@ body {
 }
 
 header {
-    background: rgb(173, 12, 173);
-    background: linear-gradient(90deg, rgba(173, 12, 173, 0.8869922969187675) 0%, rgba(222, 42, 183, 0.26514355742296913) 0%, rgba(0, 251, 255, 0.03265056022408963) 100%);
+    background: rgb(12, 173, 84);
+  
     margin: 0;
 }
 
