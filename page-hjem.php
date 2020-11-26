@@ -8,10 +8,26 @@ if (have_posts()):
     
     while (have_posts()) : the_post(); ?>
     <article class="post">
+        <div class="section">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_3vwzbl.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  ></lottie-player>
+            <div class="tilmeld">
+                <?php the_content(); ?>
+                <button>Tilmeld</button>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="section">
+            <div class="tilmeld">
+                <?php the_content(); ?>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AjWfY7SnMBI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_3vwzbl.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  ></lottie-player>
-        <?php the_content(); ?>
+    
+        
 
 
         <?php the_content(); ?>
