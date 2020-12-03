@@ -12,7 +12,18 @@
 
 <!-- site-header -->
 <header class="site-header">
-<img id="logo" src="http://localhost/wordpress/wp-content/uploads/2020/11/image0.png" alt="">
+<h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+<h5 class="description"><?php bloginfo( 'description' ); ?>
+
+
+<!-- This part if we want to add a specific element to a specific page -->
+<!-- <?php if (is_page('subscription')) {?>
+- Thank u for viewing our work
+<?php } ?> -->
+
+</h5>
+
+
 
 <nav class="site-nav">
         <?php 
@@ -21,14 +32,6 @@
         );
         ?>
         <?php wp_nav_menu( $args ) ;?>
-
-<!-- This part if we want to add a specific element to a specific page -->
-<!-- <?php if (is_page('subscription')) {?>
-- Thank u for viewing our work
-<?php } ?> -->
-
-
-
 </nav>
 
 </header> <!-- /site-header -->
