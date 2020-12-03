@@ -1,37 +1,93 @@
 /*
-Theme Name: Kunstner Boksen
-Author: Suong and Haya
-Version: 3.1
+Theme Name: Kunstner-Boksen
+Author: Haya & Suong
+Version: 3.3
 */
 
 body {
     font-family: 'Varela Round', sans-serif;
     margin: 0;
+    padding: 0;
+    background: rgb(197,197,197);
+    background: linear-gradient(180deg, rgba(197,197,197,1) 0%, rgba(255,255,255,1) 27%);   
+    
 }
+
+/* Header */
+
+ .site-header {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 8px 6px -6px #111;
+} 
 
 header {
-    background: rgb(173, 12, 173);
-    background: linear-gradient(90deg, rgba(173, 12, 173, 0.8869922969187675) 0%, rgba(222, 42, 183, 0.26514355742296913) 0%, rgba(0, 251, 255, 0.03265056022408963) 100%);
     margin: 0;
 }
 
-h1,
-a {
+#logo {
+    height: 10vh;
+    width: 20vh; 
+}
+
+.menu-primary-menu-links-container {
+    justify-content: flex-end;
+}
+
+/*Site header Menu */
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+    display: block;
+    padding: 10px 18px;
+    text-decoration: none;
+}
+
+.site-header nav ul li a:hover {
+    background-color: #f8e4bb;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current_page_ancestor a:link,
+.site-header nav ul li.current_page_ancestor a:visited {
+    font-weight: bold;
+    background-color: #e99a3f;
+    color: #ffffff;
+}
+
+
+#title, #secondery-title, #steps_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#main-title {
+    padding-top: 10vh;
+}
+
+.pencil {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1, a {
     font-family: 'Pangolin', cursive;
+}
+
+h4 {
+    padding: 0%;
     margin: 0;
 }
 
-h2 {
-    margin-left: 5px;
-}
-
-.description {
-    margin: 0;
-}
 
 a:link,
 a:visited {
-    color: #006ec3;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -54,14 +110,6 @@ article.post {
 article.post:last-of-type {
     border-bottom: none;
 }
-
-
-/* Header */
-
-.site-header {
-    border-bottom: 2px solid #999;
-}
-
 
 /* Footer */
 
@@ -88,42 +136,11 @@ article.post:last-of-type {
     clear: both;
 }
 
-.site-nav ul {
-    *zoom: 1;
-}
 
 .site-nav ul li {
     list-style: none;
     float: right;
-}
-
-
-/*Site header Menu */
-
-.site-header nav ul li {
-    margin-right: 5px;
-}
-
-.site-header nav ul li a:link,
-.site-header nav ul li a:visited {
-    display: block;
-    padding: 10px 18px;
-    border: 1px solid #bbbbbb;
-    border-bottom: none;
-    text-decoration: none;
-}
-
-.site-header nav ul li a:hover {
-    background-color: #bbbbbb;
-}
-
-.site-header nav ul li.current-menu-item a:link,
-.site-header nav ul li.current-menu-item a:visited,
-.site-header nav ul li.current_page_ancestor a:link,
-.site-header nav ul li.current_page_ancestor a:visited {
-    font-weight: bold;
-    background-color: #006ec3;
-    color: #ffffff;
+  
 }
 
 
@@ -148,13 +165,9 @@ article.page h2 {
 div.info-box {
     width: 30%;
     float: right;
-    margin: 0 0 30px 30px;
+    margin: 30px 30px 30px 0;
     padding: 20px;
     background-color: #eeeeee;
-}
-
-div.info-box h4 {
-    margin-bottom: 6px;
 }
 
 div.info-box p {
@@ -168,7 +181,7 @@ div.info-box p {
 /* Children Links*/
 
 .children-links {
-    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 80%;
     color: #006ec3;
 }
@@ -212,7 +225,7 @@ div.info-box p {
 
 /*Gallery Links*/
 
-.gallery-links h2 {
+/* .gallery-links h2 {
     font-size: 28px;
     font-weight: 600;
     color: #111;
@@ -250,21 +263,104 @@ div.info-box p {
     font-weight: 700;
     color: #111;
 }
-
+ */
 
 /* Home Page*/
 
 .section {
-    display: flex;
-    height: auto;
     width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 0 0 50px 0;
 }
 
-img {
-    width: 300px;
+
+.tilmeld {
+    width: 400px;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    font-family: 'Pangolin', cursive;
+    background-color: #e99a3f;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+}
+
+button:hover {
+    background-color: #f8e4bb;
+    color: #000000;
+}
+
+.video-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 50px 0;
+}
+
+.video-description   {
+    width: 400px;
+    line-height: 1.65em;
+
+}
+
+#video_title {
+    padding-left: 15vh;
+    width: 100vh ;
+    
+}
+
+#steps_title, #video_title {
+    margin: 50px 0 0 0;
+}
+
+#steps {
+    text-align: center;
+}
+
+#step {
     height: 300px;
     margin: 20px
+}
+
+.step-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#packages {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+
+}
+
+#sub_title {
+   display: flex;
+   justify-content: center;
+   margin: 40px 0;
+}
+
+.kontakt-section {
+    display: flex;
+    margin: 40px 50vh 0 50vh;
+    justify-content: space-around;
+
+}
+
+
+.kontakt-info li {
+    list-style: none;
+    text-align: end;
+}
+
+#special-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
 }
